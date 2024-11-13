@@ -119,6 +119,7 @@ void OwncloudSetupWizard::startWizard()
         localFolder = QDir::homePath() + QLatin1Char('/') + localFolder;
     }
 
+    localFolder = "Please select folder";
     _ocWizard->setProperty("localFolder", localFolder);
     {
         ConfigFile cfg;
