@@ -142,6 +142,7 @@ ColumnLayout {
     ShareeSearchField {
         id: shareeSearchField
         Layout.fillWidth: true
+        Layout.topMargin: Style.smallSpacing
         Layout.leftMargin: root.horizontalPadding
         Layout.rightMargin: root.horizontalPadding
 
@@ -250,12 +251,13 @@ ColumnLayout {
                     z: Infinity
 
                     sourceComponent: Rectangle {
-                        color: palette.window
+                        color: palette.base
+                        radius: Style.progressBarRadius
                         opacity: 0.5
 
                         NCBusyIndicator {
                             anchors.centerIn: parent
-                            color: palette.midlight
+                            color: palette.dark
                         }
                     }
                 }
